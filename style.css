@@ -1,0 +1,274 @@
+body { background: url('images/shBack.jpg');}
+
+#manage {
+	font-family:Tahoma, sans-serif;	
+	font-size:32px;
+	color: white;
+	width:400px;
+	height:715px;
+	display: block;
+	text-align: center;
+} 
+
+li{
+	background: #6699cc;
+	color: #fff;
+	padding: 10px;
+	display: block;
+	font-size:22px;
+	border-radius: 10px;
+	border-bottom: 1px solid #ffffff;
+	transition: 0.5s all;
+}
+ul{		
+	margin: 0;
+	padding: 0;
+	list-style: none;	
+}
+a{
+	text-decoration: none;
+	color: #ffffff;
+}
+img{
+	width: 60px;
+	height: 60px;
+	border: 5px solid transparent;	
+}
+.showPic:hover .showId{
+	opacity: 1;
+}
+.showId{
+	background: #6699cc;
+	width: 40px;
+	position: relative;
+	top: -50px;
+	left: -54px;
+	opacity: 0;
+}
+li:hover{
+	 background: #999999;
+	 padding: 10px 0 10px 20px;
+	 border-bottom: 1px solid #ffffff;
+	 transition: 0.5s all;
+}
+.mainMenu{
+	position: relative;
+	width:140px;
+}
+.mainMenu:hover .locations{
+	opacity: 1;
+	top: 0;
+}
+
+.locations,.devices{
+	position: absolute;
+	width: 110px;
+	left: 100%;
+	top: -9999em;
+	opacity: 0;
+	border-left: 2px solid transparent;
+	transition: 0.5s opacity;
+}
+.locList{
+	position: relative;
+}
+.locList:hover .devices{
+	opacity: 1;
+	top: 0;
+}
+.devices input{
+	width: 80px;
+}
+
+.remote{
+	position: relative;
+	font-family:Tahoma, sans-serif;	
+	font-size:22px;
+	color: white;
+	display: none;
+	width: 130px;
+	background: #6699cc;
+	border-radius: 10px;
+	margin-top: 10px;
+}
+.remoteW{
+	position: relative;
+	font-family:Tahoma, sans-serif;	
+	font-size:16px;
+	color: white;
+	display: none;
+	width: 200px;
+	background: #6699cc;
+	border-radius: 10px;
+	margin-top: 10px;
+}
+.changeV{
+	font-size: 12px;
+	
+}
+
+.incBtn{
+	width: 50px;
+	border-left: 10px transparent;
+	margin-left: 10px;
+	border-radius: 5px;
+	
+}
+.decBtn{
+	width: 50px;
+	border-left: 10px transparent;
+	margin-left: 10px;
+	border-radius: 5px;
+}
+.txt{
+	font-size: 18px;
+	text-align: center;
+}
+.txtW{
+	font-size: 14px;
+	text-align: center;
+
+}
+.closeBtn{
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	border-radius: 10px;
+}
+.powBtn{
+	width: 30px;
+	height:30px;
+	margin-top: 10px;
+	border-radius: 20px;	
+	background: #ff3333;
+	color: #ffffff;
+	text-align: center;
+}
+ 
+.content { 
+	width:1150px;
+	height:715px;
+	position:absolute;
+	left:400px;
+	top:4px;
+}
+.bedroom { 
+	width:530px;
+	height:510px;
+	position:absolute;
+	border-right: 1px solid #ffffff;
+	left:0px;
+	top:205px;
+}
+.bedroomPic:hover {
+	opacity: 0.5;
+}
+.bedroomPic { 
+	background: url(images/bedroom.jpg);
+	width:255px;
+	height:430px;
+	float: right;
+}
+.balcony { 
+	width:530px;
+	border-bottom: 1px solid #ffffff;
+	height:205px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	overflow: auto;
+}
+.balconyPic:hover {
+	opacity: 0.5;
+}
+.balconyPic { 
+	background: url(images/balcony.jpg);
+	width:255px;
+	height:114px;
+	float: right;
+	margin-top: 91px;
+}
+.diningroom { 
+	width:720px;
+	height:420px;
+	position:absolute;
+	border-left: 1px solid #ffffff;
+	border-bottom: 1px solid #ffffff;
+	left:530px;
+	top:0px;
+}
+.diningPic:hover {
+	opacity: 0.5;
+}
+.diningPic { 
+	background: url(images/diningroom.jpg);
+	width:445px;
+	height:330px;
+	float: left;
+	margin-top: 91px;
+}
+
+.bathroom { 
+	width:525px;
+	height:295px;
+	position:absolute;
+	left:725px;
+	top:421px;
+}
+.bathPic:hover {
+	opacity: 0.5;
+}
+.bathPic { 
+	background: url(images/bathroom.jpg);
+	width:250px;
+	height:215px;
+	float: left;
+}
+.hall { 
+	width:195px;
+	height:295px;
+	position:absolute;
+	border-right: 1px solid #ffffff;
+	left:530px;
+	top:421px;
+}
+.hallPic:hover {
+	opacity: 0.5;
+}
+.hallPic { 
+	background: url(images/hall.jpg);
+	width:195px;
+	height:215px;
+	float: left;
+}
+
+.device {
+    padding: 5px;
+    border: 2px solid black;
+    width: 200px;
+	position: absolute;
+	
+}
+.power {
+    background-color: red;
+}
+.power:active {
+    background-color: green;
+}
+.incCh {
+    background-color: grey;
+}
+.decCh {
+    background-color: grey;
+}
+.incVol {
+    background-color: yellow;
+}
+.decVol {
+	background-color: yellow;
+}
+.inID{
+	width: 20px;
+	margin-left: 5px;
+	border-radius: 3px;
+}
